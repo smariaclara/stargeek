@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-index{
+    background-image: url(/STARGEEK/img/image\ 16.png);
+    background-size: 100% 52%;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+/*login*/
+.body-login{
+    background-image: url(/STARGEEK/img/image\ 16.png);
+    background-size: 100%
+    
+}
+.div-login{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 90px;
+}
+
+.divtudo {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #362987;
+    border-radius: 10px;
+}
+
+.h1 {
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.caixas {
+    border-radius: 5px;
+    border: 0.5px solid white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.divbotao {
+    margin: 20px;
+    padding: 10px;
+}
+
+.logo {
+    height: 150px;
+}
+
+.entrar {
+    color: rgb(255, 255, 255);
+    background-color: #150096;
+    border: 2px solid #150096;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.entrar:hover {
+    transition: 0.5s;
+    box-shadow: 0 1px 5px rgb(0, 0, 0);
+}
+
+.cadastrar {
+    color: rgb(255, 255, 255);
+    background-color: #150096;
+    border: 2px solid #150096;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.cadastrar:hover {
+    transition: 0.5s;
+    box-shadow: 0 1px 5px #000000;
+}
+
+/*cadastro*/
+.body-cadastro{
+    background-image: url(/STARGEEK/img/image\ 16.png);
+    background-size: 100%;
+}
+.div-cadastro{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+}
+.divtudo-cadas {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 400px;
+    height: 390px;
+    margin: 0 auto;
+    background-color: #362987;
+    border-radius: 10px;
+}
+
+.caixas-cadas {
+    border-radius: 5px;
+    border: 0.5px solid white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.divbotao-cadas {
+    margin: 20px;
+    padding: 10px;
+}
+
+/*página inicial*/
+
+.logo-inic {
+    height: 85px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.botao-in {
+    border-radius: 5px;
+    background-color: #150096;
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-inic {
+    text-align: center;
+    margin: 80px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixas-inic {
+    border-radius: 5px;
+    border: 0.5px solid white;
+    padding: 10px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.botao-inic {
+    border-radius: 5px;
+    background-color: #150096;
+    text-decoration: none;
+    color: white;
+    padding: 9.5px 20px;
+}
+
+ .transparente{
+    border-bottom: 10px solid #282828;
+}
+
+.div-inic2 {
+    color: white;
+    display: flex;
+}
+.div-inic02{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grupo1{
+    width: 500px;
+}
+.div-inic3 {
+    color: white;
+}
+.div-inic03{
+    flex-direction: row;
+}
