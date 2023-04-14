@@ -16,9 +16,12 @@ body{
 
 /*login*/
 .body-login{
-    background-image: url(/STARGEEK/img/image\ 16.png);
+    background-image: url(/html/stargeek/img/fundo2.jpg);
     background-size: 100%
     
+}
+.loguinha{
+    height: 150px;
 }
 .div-login{
     text-align: center;
@@ -31,22 +34,29 @@ body{
     flex-direction: column;
     padding: 30px;
     width: 400px;
-    height: 300px;
+    height: 330px;
     margin: 0 auto;
-    background-color: #362987;
+    background-color: #d9d9d956;
     border-radius: 10px;
 }
 
-.h1 {
+.entrarescrito {
     margin: 10px;
-    color: rgb(255, 255, 255);
+    color: #E9311A;
+    font-size: 25px;
+}
+.PC{
+    color: #E9311A;
+    text-align: left;
+    font-size: small;
 }
 
 .caixas {
-    border-radius: 5px;
+    border-radius: 10px;
     border: 0.5px solid white;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
+    color:#E9311A
 }
 
 .divbotao {
@@ -60,8 +70,8 @@ body{
 
 .entrar {
     color: rgb(255, 255, 255);
-    background-color: #150096;
-    border: 2px solid #150096;
+    background-color: #E9311A;
+    border: 2px solid #E9311A;
     padding: 8px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -71,12 +81,68 @@ body{
 .entrar:hover {
     transition: 0.5s;
     box-shadow: 0 1px 5px rgb(0, 0, 0);
+    background-color: #ECAE7D;
+    border: 2px solid #ECAE7D;
+}
+
+/*cadastro*/
+.body-cadastro{
+    background-image: url(/html/stargeek/img/fundo2.jpg);
+    background-size: 100%
+    
+}
+.loguinha{
+    height: 150px;
+}
+.div-cadastro{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 90px;
+}
+
+.divtudao {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 400px;
+    height: 460px;
+    margin: 0 auto;
+    background-color: #d9d9d956;
+    border-radius: 10px;
+}
+
+.cadascrito {
+    margin: 10px;
+    color: #064B72;
+    font-size: 25px;
+}
+.JTC{
+    color: #064B72;
+    text-align: right;
+    font-size: small;
+}
+
+.caixas {
+    border-radius: 5px;
+    border: 0.5px solid white;
+    padding: 15px;
+    margin-top: 20px;
+    color:#064B72
+}
+
+.divbotao {
+    margin: 20px;
+    padding: 10px;
+}
+
+.logo {
+    height: 150px;
 }
 
 .cadastrar {
     color: rgb(255, 255, 255);
-    background-color: #150096;
-    border: 2px solid #150096;
+    background-color: #026D81;
+    border: 2px solid #026D81;
     padding: 8px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -85,55 +151,37 @@ body{
 
 .cadastrar:hover {
     transition: 0.5s;
-    box-shadow: 0 1px 5px #000000;
-}
-
-/*cadastro*/
-.body-cadastro{
-    background-image: url(/STARGEEK/img/image\ 16.png);
-    background-size: 100%;
-}
-.div-cadastro{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 80px;
-}
-.divtudo-cadas {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    width: 400px;
-    height: 390px;
-    margin: 0 auto;
-    background-color: #362987;
-    border-radius: 10px;
-}
-
-.caixas-cadas {
-    border-radius: 5px;
-    border: 0.5px solid white;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.divbotao-cadas {
-    margin: 20px;
-    padding: 10px;
+    box-shadow: 0 1px 5px rgb(0, 0, 0);
+    background-color: #8DB5AD;
+    border: 2px solid #8DB5AD;
 }
 
 /*página inicial*/
-
+.cabecalho{
+    background-color: #D9D9D9;
+    opacity: 50%;
+}
+.bodyin{
+    background-image: url(/html/stargeek/img/fundo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .logo-inic {
     height: 85px;
     margin-top: 20px;
     margin-left: 50px;
 }
+.logao{
+    height: 500px;
+    text-align: center;
+}
 
 .botao-in {
     border-radius: 5px;
-    background-color: #150096;
+    border-color: #000000;
+    background-color: #8DB5AD;
     text-decoration: none;
-    color: white;
+    color:#064B72;
     padding: 8px 20px;
     float: right;
     margin-top: 40px;
@@ -164,15 +212,40 @@ body{
     padding: 9.5px 20px;
 }
 
- .transparente{
-    border-bottom: 10px solid #282828;
-}
 
 .div-inic2 {
-    color: white;
+    color: #064B72;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .div-inic02{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div-inic3 {
+    color: #064B72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-inic03{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div-inic4 {
+    color: #064B72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-inic04{
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -182,9 +255,170 @@ body{
 .grupo1{
     width: 500px;
 }
-.div-inic3 {
-    color: white;
+
+/* Página Principal */
+.principal{
+    background-image: url(/html/stargeek/img/fundo3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.div-inic03{
-    flex-direction: row;
+.headerp{
+    background-color: rgba(255, 255, 255, 0.411);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerp >nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerp > nav > img{
+    height: 70px;
+    padding: 5px;
+}
+.menu{
+    display: flex;
+}
+.menu > li {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu > li > a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: small;
+    font-weight: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.menu > li > a:hover{
+    color: #FF639F;
+}
+.botoes-menu{
+    margin: 5px;
+}
+.lupinha{
+    background-color: transparent;
+    border: none;
+    color:#E9311A;
+}
+.novamidia{
+    background-color: #ECAE7D;
+    border: 5px solid #ECAE7D;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    justify-content: space-between;
+}
+.novamidia:hover{
+    transition: 0.5s;
+    box-shadow: 0 1px 5px rgb(0, 0, 0);
+}
+.sair{
+    background-color: #ECAE7D;
+    border: 5px solid #ECAE7D;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    justify-content: space-between;
+}
+.sair:hover{
+    transition: 0.5s;
+    box-shadow: 0 1px 5px rgb(0, 0, 0);
+}
+.local{
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.roll{
+    width: 150px;
+    padding: 5px;
+}
+.rolagem{
+    display: flex;
+    overflow: scroll;
+}
+.rolagem::-webkit-scrollbar{
+    display: none;
+}
+
+/*Página de filmes (e só filmes)*/
+.filiminhos{
+    background-image: url(/html/stargeek/img/fundo4.png);
+}
+.novamidiafilme{
+    background-color: #064B72;
+    border: 5px solid #064B72;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    justify-content: space-between;
+}
+.novamidiafilme:hover{
+    transition: 0.5s;
+    box-shadow: 0 1px 5px rgb(0, 0, 0);
+}
+.sairfilme{
+    background-color: #064B72;
+    border: 5px solid #064B72;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    justify-content: space-between;
+}
+.sairfilme:hover{
+    transition: 0.5s;
+    box-shadow: 0 1px 5px rgb(0, 0, 0);
+}
+.headerf{
+    background-color: rgba(255, 255, 255, 0.411);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerf >nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerf > nav > img{
+    height: 70px;
+    padding: 5px;
+}
+.sonosfilmes > img{
+    height: 170px;
+    padding: 5px;
+}
+.sonosfilmes{
+        display: flex;
+        overflow: scroll;
+}
+.sonosfilmes::-webkit-scrollbar{
+        display: none;
+}
+.CPUHE10D:hover{
+    content: url(/html/stargeek/img/como\ perder\ um\ homem\ em\ 10\ dias\ gif.gif);
+}
+.DR30:hover{
+    content: url(/html/stargeek/img/de\ repente\ 30\ gif.gif);
+}
+.ANC:hover{
+    content: url(/html/stargeek/img/a\ nova\ cinderella\ gif);
+}
+.EED:hover{
+    content: url(/html/stargeek/img/ela\ é\ demais\ gif.gif);
+}
+.OCDMMA:hover{
+    content: url(/html/stargeek/img/o\ casamento\ do\ meu\ melhor\ amigo\ gif.gif);
 }
