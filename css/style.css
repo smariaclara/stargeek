@@ -3,9 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
+ @font-face {
+        font-family: "leitedelimao.ttf";
+        src: url(/stargeek/img/leitedelimao.ttf);
+    }
+@font-face {
+        font-family: "Starjedi.ttf";
+        src: url(/stargeek/img/starjedi.ttf);
+    }
+    @font-face {
+        font-family: "lemonmilkregular.ttf";
+        src: url(/stargeek/img/lemonmilkregular.ttf);
+    }
 
 .body-index{
     background-image: url(/STARGEEK/img/image\ 16.png);
@@ -16,7 +25,7 @@ body{
 
 /*login*/
 .body-login{
-    background-image: url(/html/stargeek/img/fundo2.jpg);
+    background-image: url(/stargeek/img/fundo2.jpg);
     background-size: 100%
     
 }
@@ -40,14 +49,23 @@ body{
     border-radius: 10px;
 }
 
-.entrarescrito {
-    margin: 10px;
-    color: #E9311A;
-    font-size: 25px;
+@font-face {
+        font-family: "mermaid.ttf";
+        src: url(/stargeek/img/mermaid.ttf);
+    }
+
+
+    .entrarescrito {
+        margin: 10px;
+        color: #E9311A;
+        font-family: "mermaid.ttf";
+        font-size: 25px;
+
 }
 .PC{
     color: #E9311A;
     text-align: left;
+    font-family: "mermaid.ttf";
     font-size: small;
 }
 
@@ -87,7 +105,7 @@ body{
 
 /*cadastro*/
 .body-cadastro{
-    background-image: url(/html/stargeek/img/fundo2.jpg);
+    background-image: url(/stargeek/img/fundo2.jpg);
     background-size: 100%
     
 }
@@ -114,11 +132,13 @@ body{
 .cadascrito {
     margin: 10px;
     color: #064B72;
+    font-family: "mermaid.ttf";
     font-size: 25px;
 }
 .JTC{
     color: #064B72;
     text-align: right;
+    font-family: "mermaid.ttf";
     font-size: small;
 }
 
@@ -162,9 +182,14 @@ body{
     opacity: 50%;
 }
 .bodyin{
-    background-image: url(/html/stargeek/img/fundo1.png);
+    background-image: url(/stargeek/img/fundo1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "leitedelimao.ttf";
+}
+.SJ{
+    font-family: "Starjedi.ttf";
+    font-size: 45px;
 }
 .logo-inic {
     height: 85px;
@@ -258,7 +283,7 @@ body{
 
 /* Página Principal */
 .principal{
-    background-image: url(/html/stargeek/img/fundo3.png);
+    background-image: url(/stargeek/img/fundo3.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -296,7 +321,7 @@ body{
     margin-left: 20px;
 }
 .menu > li > a:hover{
-    color: #FF639F;
+    color:#E9311A;
 }
 .botoes-menu{
     margin: 5px;
@@ -345,14 +370,16 @@ body{
 .rolagem{
     display: flex;
     overflow: scroll;
+    
 }
 .rolagem::-webkit-scrollbar{
     display: none;
 }
-
 /*Página de filmes (e só filmes)*/
 .filiminhos{
-    background-image: url(/html/stargeek/img/fundo4.png);
+    background-image: url(/stargeek/img/fundo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .novamidiafilme{
     background-color: #064B72;
@@ -403,22 +430,134 @@ body{
 .sonosfilmes{
         display: flex;
         overflow: scroll;
+        height: 170px;
 }
 .sonosfilmes::-webkit-scrollbar{
         display: none;
 }
-.CPUHE10D:hover{
-    content: url(/html/stargeek/img/como\ perder\ um\ homem\ em\ 10\ dias\ gif.gif);
+.CPUHE10D{
+    height: 170px;
 }
-.DR30:hover{
-    content: url(/html/stargeek/img/de\ repente\ 30\ gif.gif);
+.CPUHE10D:hover{ 
+    content: url(/stargeek/img/como\ perder\ um\ homem\ em\ 10\ dias\ gif.gif);
 }
-.ANC:hover{
-    content: url(/html/stargeek/img/a\ nova\ cinderella\ gif);
+.EED{
+    height: 170px;
 }
 .EED:hover{
-    content: url(/html/stargeek/img/ela\ é\ demais\ gif.gif);
+    content: url(/stargeek/img/ela\ é\ demais\ gif.gif);
 }
-.OCDMMA:hover{
-    content: url(/html/stargeek/img/o\ casamento\ do\ meu\ melhor\ amigo\ gif.gif);
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #064a72b3;
+    transition: all 0.4s;
+  }
+   
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
+  }
+   
+  .footer {
+    text-align: right;
+    margin-top: 50px;
+  }
+   .modal__content{
+    text-align: center;
+    margin: 250px;
+    font-family: "mermaid.ttf";
+    background-color: #064B72;
+    border-radius: 5px;
+   }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #d63f3f;
+    text-decoration: none;
+  }
+  
+  .footer-btn-close {
+    width: 150px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #cfcca8;
+    color: #ffffff;
+    box-shadow: 1px 1px 0px black;
+    border-radius: 3px;
+  }
+  .HOWTOLOSEAGUY{
+    color: #ECAE7D;
+    text-shadow: 1px 1px 1px #E9311A;
+    background-color: #064B72;
+  }
+  .HOWTOLOSEAGUY2{
+    color: #ECAE7D;
+    padding: 10px;
+    font-family: "lemonmilkregular.ttf";
+    font-size: small;
+  }
+
+  /*Cadastro de mídia*/
+  .body-midia {
+    background-image: url(/stargeek/img/fundo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-midia{
+    height: 150px;
+    margin-top: -90px;
+}
+.div-midia {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+}
+.divtudo-midia {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 500px;
+    height: 490px;
+    margin: 0 auto;
+    background-color: #064a72bb;
+    border-radius: 10px;
+}
+.divtudo-midia > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixas-midia {
+    border-radius: 5px;
+    border: 0.5px solid white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.grupo33{
+    padding: 5px;
+}
+#story{
+    margin-top: 10px;
+    height: 200px;
+    width: 800px;
 }
