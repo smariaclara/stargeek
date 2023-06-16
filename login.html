@@ -7,6 +7,8 @@
     <title>Login</title>
     <link rel="shortcut icon" href="/stargeek/img/estrelinha azul marinho.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script src="/stargeek/login.js"></script>
+    
     
 
 </head>
@@ -15,14 +17,15 @@
     <img src="./img/estrelinha laranja clara.png" class="loguinha">
         <div class="divtudo">
             <h1 class="entrarescrito">Entrar</h1>
-            <input type="text" placeholder="Login" class="caixas">
-            <input type="password" placeholder="Senha" class="caixas">
+            <input id="laguin" type="text" placeholder="Login" class="caixas">
+            <input  id="protegido" type="password" placeholder="Senha" class="caixas">
             <br>
+            <p id="caderno"></p> 
             <a href="/stargeek/cadastro.html" class="PC">Precisa se cadastrar?</a>
             <div class="divbotao">
 
                 <hr>
-                <a href="/stargeek/principal.html" class="entrar">Entrar</a>
+                <button class="entrar" onclick="oz()">Entrar</button>
             </div>
         </div>
 

@@ -7,6 +7,7 @@
     <title>Cadastro</title>
     <link rel="shortcut icon" href="/stargeek/img/estrelinha azul marinho.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script src="/stargeek/cadastro.js"></script>
     
 </head>
 <body class="body-cadastro">
@@ -14,16 +15,15 @@
     <img src="./img/estrelinha azul marinho.png" class="loguinha">
         <div class="divtudao">
             <h1 class="cadascrito">Cadastro</h1>
-            <input type="text" placeholder="Login" class="caixas">
-            <input type="email" placeholder="Email" class="caixas">
-            <input type="password" placeholder="Senha" class="caixas">
-            <input type="password" placeholder="Confirme a senha" class="caixas">
-            <br>
+            <input  id="user" type="text" placeholder="Nome de Usuário" class="caixas">
+            <input  id="email" type="email" placeholder="Email" class="caixas">
+            <input id="senha" type="password" placeholder="Senha" class="caixas">
+            <input  id="csenha" type="password" placeholder="Confirme a senha" class="caixas">
             <a href="/stargeek/login.html" class="JTC">Já tem uma conta?</a>
             <div class="divbotao">
 
                 <hr>
-                <a href="/stargeek/principal.html" class="cadastrar">Cadastrar</a>
+                <button onclick="entrar()">Cadastro</button>
             </div>
         </div>
 

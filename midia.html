@@ -4,30 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de mídia</title>
     <link rel="shortcut icon" href="/stargeek/img/estrelinha azul marinho.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body class="body-midia">
     <div class="div-midia">
     <img src="./img/estrelinha azulão.png" class="logo-midia">
         <div class="divtudo-midia">
             <h1 class="h1">Cadastro de Mídia</h1>
-            <input type="text" placeholder="Nome do título" class="caixas-midia">
-            <input type="text" placeholder="Categoria" class="caixas-midia">
-                <br>
-                <input type="file">
+            <input id=filemserielivro type="text" placeholder="Nome do título" class="caixas-midia">
+            <input id="capa" type="text" placeholder="Link da imagem do título" class="caixas-midia" onkeyup='mostreme()'>
+            <img class="foto" src="" id="fotinha">
+            <br>
+            <select  class="caixas-midia" name="categoria">
+                <option value="">Selecione o tipo</option>
+                <option value="">Filme</option>
+                <option value="">Série</option>
+                <option value="">Livro</option>
+            </select>
+            <br>
+            <select  class="caixas-midia" name="generodefilm">
+                <option value="">Selecione o gênero</option>
+                <option value="">Ação</option>
+                <option value="">Animação</option>
+                <option value="">Aventura</option>
+                <option value="">Baseado em fatos</option>
+                <option value="">Chanchada</option>
+                <option value="">Cinema Catástrofe</option>
+                <option value="">Comédia</option>
+                <option value="">Comédia Romântica</option>
+                <option value="">Comédia Dramática</option>
+                <option value="">Comédia de Açãp</option>
+                <option value="">Conto</option>
+                <option value="">Cult</option>
+                <option value="">Distopia</option>
+                <option value="">Documentários</option>
+                <option value="">Drama</option>
+                <option value="">Espionagem</option>
+                <option value="">Erótico</option>
+                <option value="">Fantasia</option>
+                <option value="">Faroeste (ou Western)</option>
+                <option value="">Ficção Científica</option>
+                <option value="">Franchise/Séries</option>
+                <option value="">Guerra</option>
+                <option value="">Machinima</option>
+                <option value="">Musical</option>
+                <option value="">Novela</option>
+                <option value="">Filme noir</option>
+                <option value="">Policial</option>
+                <option value="">Romance</option>
+                <option value="">Suspense</option>
+                <option value="">Terror (ou horror)</option>
+                <option value="">Trash</option>
+                
+            </select>
               <div>
-                <img src="/STARGEEK/img/avalie.png" class="grupo33">
-
-                <textarea id="story" name="story" row="15" cols="30"></textarea>
-                <br>
+                <textarea  class="boom" id="story" name="story" row="15" cols="30" placeholder="Deixe um comentário sobre esse filme" style="width: 447px; height: 217px;"></textarea>
+                <textarea  class="textarea" id="story" name="story" row="15" cols="30" placeholder="Deixe um comentário sobre esse filme" style="width: 288px; height: 164px;"></textarea>
+                <br>                                                                  
                 <br>
                 <br>
                 </div>
+                <div class="paraorganizar">
+                <a href="/stargeek/principal.html"><img src="/stargeek/img/back to brazil.png" class="" ></a>
+                <button class="assisteebom" onclick="ameiodiei()">Cadastrar minha mídia</button>
+                <p></p>
+                </div>
             </div>
-            <a href="/stargeek/principal.html"><img src="/stargeek/img/back to brazil.png"></a>
         </div>
-        
+        <p id="stayheeere"></p>
 </body>
+<script src="/stargeek/midia.js"></script>
 </html>
